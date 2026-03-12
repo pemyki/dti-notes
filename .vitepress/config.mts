@@ -8,20 +8,22 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'DTI', link: '/DTI/terminal' }
+      { text: 'DTI', link: '/DTI/terminal' },
+      { text: 'Git & GitHub', link: '/DTI/GitHub' }
     ],
 
     sidebar: [
       {
         text: 'DTI',
         items: [
-          { text: 'Terminal', link: '/DTI/terminal' }
+          { text: 'Terminal', link: '/DTI/terminal' },
+          { text: 'Git & GitHub', link: '/DTI/GitHub' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/tshewangrinzin/dti-notes' }
     ]
   }
 })

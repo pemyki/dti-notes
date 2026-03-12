@@ -5,11 +5,13 @@ layout: home
 hero:
   name: "DTI Notes"
   text: "Digital Technology & Innovation"
-  tagline: "The Elite Convergence of Logic and Disruption"
   actions:
     - theme: brand
       text: "Refer Notes"
       link: "/DTI/terminal"
+    - theme: alt
+      text: "Git & GitHub"
+      link: "/DTI/GitHub"
     - theme: alt
       text: "Innovation Roadmap"
       link: "#roadmap"
@@ -49,6 +51,23 @@ features:
 </div>
 </div>
 </div>
+<section class="notes-section">
+<h2 class="section-title">Featured Notes</h2>
+<div class="notes-grid">
+<a class="note-card" href="/DTI/terminal">
+<div class="note-tag">DTI</div>
+<h3>Terminal</h3>
+<p>Command-line foundations, shells, and core workflows.</p>
+<code class="note-path">/DTI/terminal</code>
+</a>
+<a class="note-card" href="/DTI/GitHub">
+<div class="note-tag">DTI</div>
+<h3>Git & GitHub</h3>
+<p>Version control, collaboration flow, and PR best practices.</p>
+<code class="note-path">/DTI/GitHub</code>
+</a>
+</div>
+</section>
 <section id="roadmap" class="roadmap-section">
 <h2 class="section-title">Innovation Roadmap</h2>
 <div class="roadmap-grid">
@@ -173,6 +192,54 @@ features:
 .roadmap-section {
     margin-top: 10rem;
     text-align: center;
+}
+
+.notes-section {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.note-card {
+    display: block;
+    text-decoration: none !important;
+    background: rgba(var(--vp-c-bg-soft-rgb), 0.8);
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 20px;
+    padding: 1.6rem;
+    text-align: left;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--vp-c-brand);
+}
+
+.note-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(0, 210, 255, 0.15);
+    color: #00d2ff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+
+.note-path {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--vp-c-text-3);
 }
 
 .section-title {
